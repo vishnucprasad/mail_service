@@ -1,10 +1,9 @@
 'use strict';
 
-const dotenv = require('dotenv');
+require('dotenv').config();
 const logger = require('./config/logger.config');
 const getApp = require('./app');
 
-dotenv.config();
 
 const port = process.env.PORT || 3000;
 
